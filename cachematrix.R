@@ -30,10 +30,9 @@ makeCacheMatrix <- function(x = matrix()) {
        getmatrix=getmatrix)
 }
 
-
-# Compute the inverse of the matrix returned by "makeCacheMatrix"
+# Compute the inverse of the matrix returned by "makeCacheMatrix",
 # unless the inverse has already been calculated. If the matrix has not
-# changed, then "cachesolve" retrieves the inverse from the cache
+# changed, then "cachesolve" retrieves the inverse from the cache.
 
 cacheSolve <- function(x=matrix(), ...) {
   
