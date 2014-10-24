@@ -3,6 +3,7 @@
 
 ## Create a matrix object that can cache its inverse
 makeCacheMatrix <- function(x = matrix()) {
+  
   m <- NULL
   
   # Method to set the matrix
@@ -12,19 +13,15 @@ makeCacheMatrix <- function(x = matrix()) {
   }
   
   # Method the get the matrix
-  get <- function() {
-      x     # return the matrix
-  }
+  get <- function() x
   
   # Method to set the inverse of the matrix
-  setmatrix<-function(solve){
-      m <<- solve
-  }
+  setmatrix<-function(solve) m <<- solve
   
-  ## Method to get the inverse of the matrix
+  # Method to get the inverse of the matrix
   getmatrix <- function() m
   
-  ## List of methods
+  # List of methods
   list(set=set, get=get,
        setmatrix=setmatrix,
        getmatrix=getmatrix)
